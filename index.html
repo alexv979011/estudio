@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="auto" data-paleta="neutro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>Estudio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Fondo difuso: es lo que el "vidrio" deja ver a través -->
+  <div class="fondo" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <!-- Barra de avance de lectura -->
+  <div class="lectura" aria-hidden="true"><span id="barraLectura"></span></div>
+
+  <!-- Menú lateral (PC) / riel de iconos (tablet) -->
+  <aside id="lateral" class="glass lateral" aria-label="Navegación"></aside>
+
+  <!-- Selector de materia: píldora (teléfono) y menú desplegable -->
+  <button id="materiaBtn" class="glass materia-pill" data-accion="materias" aria-label="Cambiar de materia"></button>
+  <div id="menuMat" class="glass menu-mat" hidden></div>
+
+  <main id="vista" class="vista" tabindex="-1"></main>
+
+  <!-- Barra de pestañas inferior (teléfono) -->
+  <nav id="tabbar" class="glass tabbar" aria-label="Menú principal"></nav>
+
+  <!-- Reloj: píldora siempre visible + panel desplegable -->
+  <div id="temporizador" class="glass temporizador" role="timer" aria-label="Temporizador"></div>
+  <div id="tPanel" class="glass t-panel" hidden></div>
+
+  <!-- Hoja para elegir el tiempo antes de una lección -->
+  <div id="hoja" class="hoja" hidden></div>
+
+  <div id="toast" class="glass toast" role="status" aria-live="polite"></div>
+
+  <!-- Materias y contenido (un archivo por unidad) -->
+  <script src="datos/materias.js"></script>
+  <script src="datos/calendario.js"></script>
+  <script src="datos/quimica/unidad1.js"></script>
+  <script src="datos/quimica/unidad2.js"></script>
+  <script src="datos/quimica/unidad3.js"></script>
+  <script src="datos/quimica/unidad4.js"></script>
+  <script src="datos/quimica/unidad5.js"></script>
+  <script src="datos/mate/unidad1.js"></script>
+  <script src="datos/mate/unidad2.js"></script>
+  <script src="datos/mate/unidad3.js"></script>
+  <script src="datos/mate/unidad4.js"></script>
+  <script src="widgets.js"></script>
+  <script src="juegos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
